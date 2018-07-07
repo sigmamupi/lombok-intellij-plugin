@@ -18,7 +18,7 @@ public class LombokLoggerHandler extends BaseLombokHandler {
     final Collection<AbstractLogProcessor> logProcessors = Arrays.asList(
       new CommonsLogProcessor(), new JBossLogProcessor(),
       new Log4jProcessor(), new Log4j2Processor(), new LogProcessor(),
-      new Slf4jProcessor(), new XSlf4jProcessor(), new FloggerProcessor());
+      new Slf4jProcessor(), new XSlf4jProcessor(), new FloggerProcessor(), new Vlf4jProcessor());
 
     final String lombokLoggerName = AbstractLogProcessor.getLoggerName(psiClass);
     final boolean lombokLoggerIsStatic = AbstractLogProcessor.isLoggerStatic(psiClass);
