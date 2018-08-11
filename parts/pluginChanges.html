@@ -1,10 +1,22 @@
 <ul>
+  <li>0.20
+    <ol>
+      <li>Fixed #119: IDEA doesn't rename builder method when field is renamed</li>
+      <li>Fixed #144: Find usages on field should find usages of builder/wither methods</li>
+      <li>Fixed #186: Find usages doesn't work (for example Accessors with Setter/Getter)</li>
+      <li>Fixed #295: Refactor Rename misses @Builder methods</li>
+      <li>Fixed #450: @Builder doesn't mark generated builder 'setters' as @Deprecated if the source field is deprecated</li>
+      <li>Fixed #497: Lombok plugin breaks creating Intellij IDEA postfix expressions</li>
+      <li>Fixed #499: @Builder does not respect @Accessors on fields</li>
+    </ol>
+  </li>
   <li>0.19
     <ol>
       <li>Fixed #475: Added support for @FieldNameConstants</li>
       <li>Fixed #488: Added support for @Flogger annotation</li>
       <li>Fixed #490: Added support for lombok.noArgsConstructor.extraPrivate</li>
       <li>Fixed #473: Warning about Wither requiring AllArgsConstructor, although Builder provides one</li>
+      <li>Fixed #382: Added support for @XXX(onMethod_, onParam_, onConstructor_) for JDK8</li>
     </ol>
   </li>
   <li>0.18
